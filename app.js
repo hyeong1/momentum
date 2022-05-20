@@ -1,4 +1,4 @@
-const a = 5;3333
+const a = 5;
 const b = 2;
 let myName = "hyeong";
 
