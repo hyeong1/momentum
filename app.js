@@ -1,9 +1,17 @@
-const player = {
-    name: "hyeong",
-    sayHello: function(otherPersonsName){
-        console.log("Hello " + otherPersonsName + " nice to meet you");
-    },
-};
+const loginForm = document.querySelector(".login-form");
+const loginInput = document.querySelector(".login-form input");
 
-console.log(player.name);
-player.sayHello("lynn");
+const link = document.querySelector("a");
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+    console.log(loginInput.value);
+}
+
+function handleLinkClick(event) {
+    event.preventDefault();
+    console.dir(event);
+}
+
+loginForm.addEventListener("submit", onLoginSubmit);
+link.addEventListener("click", handleLinkClick);
