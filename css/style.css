@@ -1,3 +1,93 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+
 .hidden {
     display: none;
+}
+
+#weather {
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    color: aliceblue;
+}
+
+#innerElement {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-align: center;
+}
+
+#clock {
+    font-size: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#login-form :first-child{
+    height: 30px;
+    width: 200px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    color: aliceblue;
+    text-align: center;
+}
+
+#todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#todo-form :first-child {
+    position: absolute;
+    height: 30px;
+    width: 200px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    color: aliceblue;
+}
+
+#quote {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    color: aliceblue;
+    bottom: 15px;
+}
+
+li {
+    list-style: none;
+    padding-right: 50px;
+}
+
+li :first-child {
+    margin-right: 10px;
+    color: aliceblue;
+    border: none;
+    background-color: darkred;
 }
